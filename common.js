@@ -954,5 +954,5 @@ function toastMessageCoppy() {
     };
 
     toastr.options.closeHtml = '<button class="closebtn"></button>';
-    toastr.success("Đã copy!", "");
+    toastr.success("    Đã copy!", "");
 }
