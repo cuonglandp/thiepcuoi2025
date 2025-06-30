@@ -35,6 +35,13 @@
     var photoGalleries = [];
     var dataWishes = [];
   </script>
+  <style>
+    .lg-outer .lg-thumb-item img {
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: contain !important;
+    }
+  </style>
 </head>
 
 <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
@@ -891,7 +898,7 @@
             .catch(err => {
               document.getElementById('success').style.display = 'none';
               document.getElementById('error').style.display = 'block';
-              console.error('Lỗi khi gửi lời chúc:', error); 
+              console.error('Lỗi khi gửi lời chúc:', error);
             });
         } catch (error) {
           document.getElementById('success').style.display = 'none';
