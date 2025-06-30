@@ -936,23 +936,5 @@ function toastMessageWishes(messages = null, scrollToId = null) {
 
 // Toast messages for wishes
 function toastMessageCoppy() {
-    toastr.options = {
-        closeButton: true,
-        debug: false,
-        newestOnTop: true,
-        progressBar: false,
-        positionClass: 'toast-top-right',
-        preventDuplicates: false,
-        showDuration: '1000',
-        hideDuration: '1000',
-        timeOut: '800',
-        extendedTimeOut: '1000',
-        showEasing: 'swing',
-        hideEasing: 'linear',
-        showMethod: 'fadeIn',
-        hideMethod: 'fadeOut'
-    };
-
-    toastr.options.closeHtml = '<button class="closebtn"></button>';
-    toastr.success("    Đã copy!", "");
+    alert("Đã copy!");
 }
